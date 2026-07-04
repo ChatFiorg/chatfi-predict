@@ -8,8 +8,8 @@ on:
   workflow_dispatch: {}
 
 env:
-  SOLANA_VERSION: 1.18.17
-  ANCHOR_VERSION: 0.30.1
+  SOLANA_VERSION: 2.1.15
+  ANCHOR_VERSION: 0.32.1
 
 jobs:
   build-and-test:
@@ -38,7 +38,7 @@ jobs:
 
       - name: Install Anchor CLI via AVM
         run: |
-          cargo install --git https://github.com/coral-xyz/anchor avm --locked --force
+          cargo install --git https://github.com/solana-foundation/anchor avm --locked --force
           avm install ${{ env.ANCHOR_VERSION }}
           avm use ${{ env.ANCHOR_VERSION }}
 
