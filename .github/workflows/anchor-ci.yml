@@ -26,6 +26,9 @@ jobs:
       - name: Install Rust
         uses: dtolnay/rust-toolchain@stable
 
+      - name: Force update to latest stable Rust
+        run: rustup update stable && rustup default stable && rustc --version
+
       - name: Cache cargo registry and target
         uses: Swatinem/rust-cache@v2
 
