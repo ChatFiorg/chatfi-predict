@@ -8,7 +8,7 @@ pub mod state;
 use constants::NUM_OUTCOMES;
 use instructions::*;
 
-declare_id!("Predict11111111111111111111111111111111111");
+declare_id!("Fg6PaFpoGXkYsidMpWTK6W2BeZ7FEfcYkg476zPFsLnS");
 
 #[program]
 pub mod prediction_market {
